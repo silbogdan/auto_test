@@ -10,4 +10,4 @@ jobs:
         compiler: [gcc, clang]
     steps:
       - run: echo "Tested by Bogdan"
-      - run: gcc sum.c -o sum
+      - run: gcc ../sum.c -o ../sum
