@@ -15,4 +15,4 @@ jobs:
       - name: Get working directory
         run: pwd
       - name: Compile
-        run: gcc ../../sum.c -o ../../sum
+        run: gcc -o sum sum.c
