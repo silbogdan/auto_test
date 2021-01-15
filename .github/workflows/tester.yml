@@ -3,7 +3,7 @@ name: tester
 on: [push]
 
 jobs:
-  build:
+  ubuntu-build:
     runs-on: ubuntu-latest
     strategy:
       matrix:
@@ -11,6 +11,6 @@ jobs:
     steps:
       - uses: actions/checkout@v2
       - name: Tester name
-      - run: echo "Tested by Bogdan"
+        run: echo "Tested by Bogdan"
       - name: Compile
-      - run: gcc ../../sum.c -o ../../sum
+        run: gcc ../../sum.c -o ../../sum
