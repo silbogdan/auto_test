@@ -16,15 +16,6 @@ jobs:
         run: pwd
       - name: Compile
         run: gcc -o sum sum.c
-      - name: Test1 (should be 15)
-        run: ./sum 5 10
-      - name: Test2 (should be 2147483647)
-        run: ./sum 2147483647 0
-      - name: Test3 (should be -2147483647)
-        run: ./sum 0 -2147483647
-      - name: Test4 (should exceed upper int bounds)
-        run: ./sum 21474836471 1
-      - name: Test5 (should exceed lower int bounds)
-        run: ./sum -21347483647 -1
-      - name: Test6 (string is considered 0)
-        run: ./sum wrong input
+      - name: Test cases
+        run: ./testcases.sh
+          
