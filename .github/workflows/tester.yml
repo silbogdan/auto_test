@@ -1,0 +1,12 @@
+name: tester
+
+on: [push]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        compiler: [gcc, clang]
+    steps:
+      - run: echo "Tested by Bogdan"
