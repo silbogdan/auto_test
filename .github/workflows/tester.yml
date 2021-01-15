@@ -19,22 +19,22 @@ jobs:
       - name: Test cases
         run: |
             if [ "$(./sum 5 10)" != "15" ]
-            then
+              then
                 exit 1
             fi
 
             if [ "$(./sum 10 20)" != "30" ]
-            then
+              then
                 exit 1
             fi
 
             if [ "$(./sum string not_supported)" != "0" ]
-            then
+              then
                 exit 1
             fi
 
             if [ "$(./sum 2147483647 0)" != "2147483647" ]
-            then
+              then
                 exit 1
             fi
                   
