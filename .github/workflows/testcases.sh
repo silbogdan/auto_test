@@ -30,12 +30,3 @@ then
 else
     echo "Test passed"
 fi
-
-# Wrong result test
-# if [ "$(./sum 1 0)" != "2" ]
-# then
-#     echo "Result error (on purpose)"
-#     exit 1
-# else
-#     echo "Test passed"
-# fi
