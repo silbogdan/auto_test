@@ -9,7 +9,7 @@ int main(int argc, char *argv[])
 	b = atoi(argv[2]);
 	sum = a+b;
 	
-	printf("Sum of %d, %d is: %d\n", a, b, sum);
+	printf("%d", sum);
 	
 	return 0;
 }
