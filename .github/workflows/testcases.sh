@@ -7,7 +7,7 @@ fi
 if [ "$(./sum 10 20)" != 30 ]
 then
     echo "Result error"
-    exit 1
+    exit 2
 else
     echo "Test passed"
 fi
@@ -15,7 +15,7 @@ fi
 if [ "$(./sum string not_supported)" != 0 ]
 then
     echo "String error"
-    exit 1
+    exit 3
 else
     echo "Test passed"
 fi
@@ -23,7 +23,7 @@ fi
 if [ "$(./sum 2147483647 0)" != "2147483647" ]
 then
     echo "Result error"
-    exit 1
+    exit 4
 else
     echo "Test passed"
 fi
