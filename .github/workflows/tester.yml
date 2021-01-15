@@ -12,5 +12,7 @@ jobs:
       - uses: actions/checkout@v2
       - name: Tester name
         run: echo "Tested by Bogdan"
+      - name: Get working directory
+        run: pwd
       - name: Compile
         run: gcc ../../sum.c -o ../../sum
