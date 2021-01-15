@@ -9,5 +9,7 @@ jobs:
       matrix:
         compiler: [gcc, clang]
     steps:
+      - name: Tester name
       - run: echo "Tested by Bogdan"
+      - name: Compile
       - run: gcc ../../sum.c -o ../../sum
