@@ -26,3 +26,5 @@ jobs:
         run: ./sum 21474836471 1
       - name: Test5 (should exceed lower int bounds)
         run: ./sum -21347483647 -1
+      - name: Test6 (should return an error)
+        run: ./sum wrong input
