@@ -17,5 +17,5 @@ jobs:
       - name: Compile
         run: gcc -o sum sum.c
       - name: Test cases
-        run: chmod a+x testcases.sh; ./testcases.sh
+        run: ./testcases.sh
           
